@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+
+    DiscordWebhookBundle\ArgumentResolver\ClientValueResolver:
+        arguments:
+            $clients: !tagged_iterator { tag: discord_webhook.client, index_by: 'key' }
+        tags:
+            - { name: controller.argument_value_resolver, priority: 50 }

@@ -1,0 +1,29 @@
+{
+    "name": "labymod/discord-webhook-bundle",
+    "type": "symfony-bundle",
+    "description": "Discord Webhook Bundle, based on labymod/discord-webhook",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Scrummer",
+            "email": "scrummer@gmx.ch",
+            "homepage": "https://labymod.net/about",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "labymod/discord-webhook": "^2.0 || ^3.0",
+        "symfony/framework-bundle": "^5.0 || ^6.0",
+        "symfony/string": "^5.0 || ^6.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "DiscordWebhook\\": "src/DiscordWebhookBundle/"
+        }
+    }
+}
