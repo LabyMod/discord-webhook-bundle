@@ -42,7 +42,7 @@ discord_webhook:
 #### Default Client
 With `discord_webhook.default_url` configured, the basic service (`DiscordWebhookBundle\DiscordWebhook`) is configured and publicly available in the service container:
 
-### Additional named clients
+#### Additional named clients
 If you have configured one or more named clients like below, you can access them in two ways by their name.
 ```yaml
 discord_webhook
