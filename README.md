@@ -1,4 +1,7 @@
 # Discord Webhook Bundle
+[![Latest Stable Version](https://poser.pugx.org/labymod/discord-webhook-bundle/v)](https://packagist.org/packages/labymod/discord-webhook-bundle)
+[![Total Downloads](https://poser.pugx.org/labymod/discord-webhook-bundle/downloads)](https://packagist.org/packages/labymod/discord-webhook-bundle)
+[![License](https://poser.pugx.org/labymod/discord-webhook-bundle/license)](https://packagist.org/packages/labymod/discord-webhook-bundle)
 
 Symfony Bundle for [labymod/discord-webhook](https://github.com/LabyMod/discord-webhook). Configure webhooks easily within your Symfony application
 
