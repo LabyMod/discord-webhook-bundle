@@ -9,7 +9,7 @@ Symfony Bundle for [labymod/discord-webhook](https://github.com/LabyMod/discord-
 
 | Release | Supported PHP Versions | Supported Symfony Versions | Release Date | Maintained | Branch |
 |---------|------------------------|----------------------------|--------------|------------|--------|
-| 1.x     | `^8.0`                 | `^5.0`, `^6.0`             | 24.01.2022   | Yes        | master |
+| 1.x     | `^8.0`                 | `^4.4`, `^5.0`, `^6.0`     | 24.01.2022   | Yes        | master |
 
 ## Installation
 
