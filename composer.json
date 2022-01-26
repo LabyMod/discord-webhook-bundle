@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DiscordWebhook\\": "src/DiscordWebhookBundle/"
+            "DiscordWebhookBundle\\": "src/DiscordWebhookBundle/"
         }
     }
 }
