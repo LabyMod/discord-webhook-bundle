@@ -13,9 +13,27 @@ use GuzzleHttp\Client;
  */
 class DiscordWebhook extends Webhook
 {
-    public function __construct(array|string $url = [])
+    private string $serviceName;
+
+    public function __construct(array|string $url = [], string $serviceName = DiscordWebhook::class)
     {
         parent::__construct($url);
+
+        $this->serviceName = $serviceName;
+    }
+
+    public function send(): bool
+    {
+        $status = parent::send(false);
+        $ignoredFields = [];
+
+        if ($this->serviceName !== DiscordWebhook::class) {
+            $ignoredFields = ['username', 'avatarUrl'];
+        }
+
+        $this->reset($ignoredFields);
+
+        return $status;
     }
 
     public function setUrl(string $webhook): void

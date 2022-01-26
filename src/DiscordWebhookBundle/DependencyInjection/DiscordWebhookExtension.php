@@ -30,6 +30,7 @@ class DiscordWebhookExtension extends Extension
             ->register(DiscordWebhook::class, DiscordWebhook::class)
             ->setPublic(true)
             ->setArgument('$url', $config['default_url'])
+            ->setArgument('$serviceName', DiscordWebhook::class)
             ->addTag('discord_webhook.client', ['key' => DiscordWebhook::class]);
 
         // configure the additional named clients
@@ -47,6 +48,7 @@ class DiscordWebhookExtension extends Extension
                 ->register($name, DiscordWebhook::class)
                 ->setPublic(true)
                 ->setArgument('$url', $clientConfig['webhook_url'])
+                ->setArgument('$serviceName', $name)
                 ->addMethodCall('setUsername', [$clientConfig['username']])
                 ->addMethodCall('setAvatar', [$clientConfig['avatar_url']])
                 ->addTag('discord_webhook.client', ['key' => $name]);
